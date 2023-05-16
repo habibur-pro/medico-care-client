@@ -10,9 +10,16 @@ const Banner = () => {
                 <Header></Header>
                 <div className=" ">
                     <div className="max-w-[1240px] px-5  mx-auto  md:flex items-center ">
-                        <div className=' bg-slate-300'>
-                            <h3 className=" text-5xl text-black font-bold "> Partnering with You for a Lifetime of Good Health </h3>
+                        <div className=' '>
+                            <h1 className=" text-5xl text-black font-bold   leading-[60px]">
+                                Your Partner in Health, Empowering Wellness, Exceptional Care
+                            </h1>
+                            <p className='text-md mt-5'>Exceptional healthcare provider committed to personalized, advanced care, empowering patients for optimal recovery and long-term wellness.</p>
+                            <button className='btn btn-primary mt-5 rounded-sm'>Get Started</button>
                         </div>
+                        {/* Enhancing Your Wellbeing, One Click at a Time */}
+                        {/* Entrust your health our doctors */}
+
                         <div className='w-full '>
                             <img className='w-full h-[600px] w-[500px] mt-28' src={bannerDoctor} alt="" />
                         </div>
