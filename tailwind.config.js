@@ -3,9 +3,19 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner-bg': "url(/src/assets/bg-image-1.jpg)",
+        'banner-bg-2': "url(/src/assets/bg-image-2.jpg)",
+        'banner-bg-3': "url(/src/assets/banner-bg-3.jpg)",
+        'banner-bg-4': "url(/src/assets/banner-bg-4.jpg)",
+        'banner-bg-5': "url(/src/assets/slides-bg.jpg)",
+        'banner-bg-6': "url(/src/assets/bg-6.jpg)",
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -19,6 +29,7 @@ export default {
           neutral: "#3d4451",
           white: '#ffffff',
           "base-100": "#ffffff",
+          "base-200": "#f5f5f5"
         },
         "dark": {
           ...require("daisyui/src/colors/themes")["[data-theme=dark]"],

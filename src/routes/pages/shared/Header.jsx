@@ -1,9 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 const Header = () => {
+    const { pathname } = useLocation()
+
     return (
-        <nav className="bg-primary">
+        <nav className={`${pathname === '/' ? 'bg-trnsparent' : 'bg-blue-500'} `}>
             <div className="max-w-[1240px] mx-auto  md:flex justify-between items-center py-4">
                 <h3 className="text-3xl font-bold">Medico<span className="font-semibold">Care</span></h3>
                 <ul className="md:flex gap-4">
